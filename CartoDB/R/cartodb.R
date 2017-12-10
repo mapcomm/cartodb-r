@@ -1,3 +1,5 @@
+# Todo - change URL to custom server, modify to use domainless URLs
+
 cartodb <-
 function(account.name, api.key = NULL) {
     .CartoDB$data <- list(

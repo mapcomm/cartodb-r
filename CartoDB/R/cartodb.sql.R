@@ -1,3 +1,5 @@
+# Todo: need to change order from account.name and api.sql to domainless syntax
+
 cartodb.sql.base <-
 function() {
     if ('api.key' %in% names(.CartoDB$data)) {
