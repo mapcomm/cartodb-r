@@ -1,11 +1,11 @@
 Package: CartoDB
 Type: Package
 Title: Interface to data on CartoDB
-Version: 1.4
+Version: 1.4mod
 Date: 2012-05-22
 Author: Andrew Hill
-Maintainer: Andrew Hill <andrew@vizzuality.com>
+Maintainer: Jeremy Kidwell <j.kidwell@bham.ac.uk>
 Depends: RCurl, RJSONIO
 Suggests: png, rgdal
-Description: Allows you to quickly and easily use data hosted on your CartoDB account through R.
+Description: Allows you to quickly and easily use data hosted on your CartoDB account through R. Modified to work with locally hosted carto servers.
 License: GPL-3

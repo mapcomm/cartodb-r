@@ -1,13 +1,13 @@
-# Todo - change URL to custom server, modify to use domainless URLs
+# Note: modified lines 8-10 below to reflect locally hosted carto server instance
 
 cartodb <-
 function(account.name, api.key = NULL) {
     .CartoDB$data <- list(
         api.key=NULL,
         account.name=NULL,
-        api.sql=".cartodb.com/api/v2/sql",
-        api.tiles=".cartodb.com/tiles/",
-        api.maps=".cartodb.com/tables/"
+        api.sql="carto.mapping.community:9090/api/v2/sql",
+        api.tiles="carto.mapping.community:9191/tiles/",
+        api.maps="carto.mapping.community/tables/"
         )
     if(is.character(api.key)){
         .CartoDB$data$api.key<-api.key   

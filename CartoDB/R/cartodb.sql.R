@@ -1,11 +1,11 @@
-# Todo: need to change order from account.name and api.sql to domainless syntax
+# Note, removed reference to ".CartoDB$data$account.name," below on lines 6 and 8 for domainless url setup
 
 cartodb.sql.base <-
 function() {
     if ('api.key' %in% names(.CartoDB$data)) {
-        return( paste( "http://",.CartoDB$data$account.name,.CartoDB$data$api.sql,"?","api_key=",.CartoDB$data$api.key,"&" ,sep='') )
+        return( paste( "http://",.CartoDB$data$api.sql,"?","api_key=",.CartoDB$data$api.key,"&" ,sep='') )
     } else {
-        return( paste( "http://",.CartoDB$data$account.name,.CartoDB$data$api.sql,"?",sep='' ) )
+        return( paste( "http://",.CartoDB$data$api.sql,"?",sep='' ) )
     }
 }
 cartodb.sql.fromParams<-
